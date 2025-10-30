@@ -120,10 +120,6 @@
 
 <slot />
 
-<footer>
-	Created by <a class="me" href="/about">Ladvace</a> ❤️ with
-	<span class="svelte">Svelte</span>
-</footer>
 
 <style>
 	* {
@@ -154,11 +150,11 @@
 		height: 100%;
 		overflow: auto;
 		font-family: 'Fira Code', monospace;
-		background-color: #0a0908;
+		background-color:rgb(23, 60, 34);
 	}
 
 	:global(body) {
-		background-color: var(--background);
+		background-color:rgb(23, 60, 34);
 		background-size: 200% 200%;
 		color: white;
 		margin: 0;

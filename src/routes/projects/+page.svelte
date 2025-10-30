@@ -3,22 +3,23 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo — Projects</title>
+	<title>Sneha Sriram — Projects</title>
 </svelte:head>
 
 <div class="projectContainer">
 	<div class="projects">
 		<h1>Projects</h1>
-		<p class="note">
-			Note: most of my projects are under NDA so I am unable to share those projects. If there is
-			anything you would like to see further, please feel free to contact me.
-		</p>
 		{#each projects as project}
 			<div class="project">
 				<div class="header">
 					<h2>
 						{project.title}
 					</h2>
+					 <div class="tags">
+						{#each project.tags as tag}
+							<span class="tag">{tag}</span>
+						{/each}
+					</div>
 					<div class="techsContainer">
 						Technologies:
 						<div class="techs">
@@ -40,6 +41,20 @@
 </div>
 
 <style>
+	.tags {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .tag {
+        background-color: rgba(33, 170, 60, 0.68);
+        padding: 0.2rem 0.8rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+
 	.projectContainer {
 		width: 100%;
 		max-width: 900px;
@@ -81,32 +96,37 @@
 	}
 
 	.project {
-		text-align: start;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		color: white;
-		background: #111;
-		padding: 2rem;
-		width: 100%;
-		border-radius: 5px;
-		transition: transform 0.2s ease-in-out;
-		border-radius: 25px;
-	}
+        text-align: start;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background: #111;
+        padding: 2rem;
+        width: 100%;
+        border-radius: 25px;
+        transition: transform 0.2s ease-in-out;
+        height: 100%;
+    }
 
 	.project p {
 		font-weight: 100;
 		color: #708090;
 	}
 
+	.project:hover {
+        transform: translateY(-5px);
+    }
+
 	.projects {
-		width: 100%;
-		margin: 50px auto;
-		display: grid;
-		grid-gap: 1rem;
-		grid-template-columns: 1fr;
-		margin-bottom: 10px;
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    margin-bottom: 10px;
 	}
+	
 
 	.techsContainer {
 		display: flex;
@@ -132,30 +152,18 @@
 		padding: 10px;
 	}
 
-	@media (min-width: 900px) {
-		.projectContainer {
-			padding: 0;
-		}
-		.projects > h1 {
-			font-size: 48px;
-			margin: 50px 0 0 0;
-		}
-
+		/* For tablets and smaller screens */
+	@media (max-width: 1024px) {
 		.projects {
-			grid-template-columns: 1fr;
-		}
-
-		.projects .project {
-			min-height: 200px;
-		}
-		.button {
-			max-width: 200px;
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	@media (min-width: 600px) {
+	/* For mobile screens */
+	@media (max-width: 768px) {
 		.projects {
 			grid-template-columns: 1fr;
 		}
 	}
+	
 </style>

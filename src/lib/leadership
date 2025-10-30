@@ -1,0 +1,19 @@
+const leadership = [
+  {
+    organization: "Wellesley Engineering Society",
+    role: "President",
+    date: "2024-Present",
+  },
+  {
+    organization: "Asian Student Union",
+    role: "Fundraising Chair, Outreach Chair, Senior Advisor",
+    date: "2022-2025",
+  },
+  {
+    organization: "Cafe Hoop",
+    role: "Financial Chair",
+    date: "2023-2024",
+  }
+];
+
+export default leadership;

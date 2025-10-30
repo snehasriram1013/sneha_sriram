@@ -7,10 +7,26 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo - Main page</title>
+	<title>Sneha Sriram - Main page</title>
 </svelte:head>
 <main>
-	<h1>Hi!✋ <br /> I'm Gianmarco a Front-End Developer 💻 based in Italy</h1>
+	<div class="container">
+		<div class="intro-section">
+			<div class="text-content">
+			<div class="text-content">
+				<h1 class="typing-text">Hi, I'm Sneha</h1>
+			</div>
+			<div class="headline">
+				<p class="role">people centered developer and researcher</p>
+				<p class="education">studying computer science + philosophy @ wellesley college</p>
+				<p class="position">SERC Scholar @ MIT</p>
+			</div>
+			</div>
+			<div class="image-content">
+			<img src="src/lib/assets/sneha_nyc.jpg" alt="Sneha Sriram" />
+			</div>
+		</div>
+	</div>
 	<div class="icons">
 		<div
 			role="button"
@@ -28,7 +44,7 @@
 		</div>
 
 		<a
-			href="https://github.com/Ladvace"
+			href="https://github.com/snehasriram1013"
 			aria-label="GitHub"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -38,7 +54,7 @@
 			</div>
 		</a>
 		<a
-			href="https://www.linkedin.com/in/ladvace/"
+			href="https://www.linkedin.com/in/snehasriram/"
 			aria-label="Linkedin"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -47,20 +63,60 @@
 				<FaLinkedin />
 			</div>
 		</a>
-		<a
-			href="https://medium.com/@ladvace"
-			aria-label="Medium"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaMedium />
-			</div>
-		</a>
 	</div>
 </main>
 
 <style>
+	.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  .intro-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .image-content {
+    flex-shrink: 0;
+  }
+
+  .image-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+  }
+
+  .typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 2.2s steps(12) forwards,
+               blink 0.8s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  @media (max-width: 768px) {
+    .image-content img {
+      width: 150px;
+      height: 150px;
+    }
+  }
 	a {
 		color: white;
 		text-decoration: none;

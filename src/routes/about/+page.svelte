@@ -3,17 +3,14 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo — About</title>
+	<title>Sneha Sriram — About</title>
 </svelte:head>
 
 <div class="container">
 	<main>
 		<h1>About</h1>
 		<p>
-			I'm a Software developer with over 2 years of front-end development experience, experienced in
-			both enterprise and open-source software development. I'm based in Italy and currently working
-			as a freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
-			I tend to learn and use the best technology and approach to best solve the problem I'm facing.
+			If you’ve taken the effort to stumble onto this page, I would be remiss not to introduce myself. Hi, I’m Sneha Sriram. Currently, I’m a 4th year at Wellesley College. Most of my interests are in CS and Ethics, and most of my work reflects that. I’m chronically obsessed with research, which reflects a lot about who I am as a person, and who I am as a thinker. In time, I hope to use that in tech for social good spaces. Welcome to my personal readme.
 		</p>
 		<h2>Skills</h2>
 		{#each Object.entries(skills) as [section, technologies]}

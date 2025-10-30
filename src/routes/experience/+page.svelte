@@ -1,9 +1,10 @@
 <script>
-  import essays from '$lib/essays';
+  import experiences from '$lib/Experiences';
+  import leadership from '$lib/leadership';
 </script>
 
 <svelte:head>
-  <title>Sneha Sriram — Writing</title>
+  <title>Sneha Sriram — Experience</title>
 </svelte:head>
 
 <div class="experience-container">
@@ -27,6 +28,19 @@
     {/each}
   </section>
 
+  <section>
+    <h1>Leadership</h1>
+    {#each leadership as lead}
+      <div class="experience-card">
+        <div class="header">
+          <h2><strong>{lead.organization}</strong> | <em>{lead.role}</em></h2>
+          <div class="subheader">
+            <span class="date">{lead.date}</span>
+          </div>
+        </div>
+      </div>
+    {/each}
+  </section>
 </div>
 
 <style>

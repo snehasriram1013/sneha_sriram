@@ -4,16 +4,20 @@ const routes = [
 		label: 'Home'
 	},
 	{
-		href: '/projects',
-		label: 'Projects'
-	},
-	{
 		href: '/about',
 		label: 'About'
 	},
 	{
+		href: '/projects',
+		label: 'Projects'
+	},
+	{
+		href: '/experience',
+		label: 'Experience'
+	},
+	{
 		href: '/blog',
-		label: 'Blog'
+		label: 'Writing'
 	}
 ];
 
