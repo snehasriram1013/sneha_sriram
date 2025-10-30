@@ -9,7 +9,7 @@
 <div class="experience-container">
   <section>
     <h1>Experience</h1>
-    {#each experiences as exp}
+    {#each essays as exp}
       <div class="experience-card">
         <div class="header">
           <h2><strong>{exp.company}</strong> | <em>{exp.role}</em></h2>
