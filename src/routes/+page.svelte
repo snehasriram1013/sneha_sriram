@@ -8,6 +8,10 @@
 
 <svelte:head>
 	<title>Sneha Sriram - Main page</title>
+	<meta name="title" content="Sneha Sriram – Researcher & Technologist">
+	<meta name="description" content="Sneha Sriram is a researcher and technologist studying human-computer interaction, accessibility, and ethics in AI.">
+	<meta name="keywords" content="Sneha Sriram, Wellesley, HCI, accessibility, AI ethics, researcher">
+
 </svelte:head>
 <main>
 	<div class="container">
