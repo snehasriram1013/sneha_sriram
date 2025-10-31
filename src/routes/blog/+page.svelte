@@ -7,7 +7,6 @@
 
 <div class="experience-container">
   <p>Coming Soon</p>
-  </section>
 
 </div>
 
