@@ -23,7 +23,7 @@
 			</div>
 			</div>
 			<div class="image-content">
-			<img src="src/lib/assets/sneha_nyc.jpg" alt="Sneha Sriram" />
+			<img src="/sneha_nyc.jpg" alt="Sneha Sriram" />
 			</div>
 		</div>
 	</div>
