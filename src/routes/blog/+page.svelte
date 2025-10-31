@@ -1,5 +1,4 @@
 <script>
-  import essays from '$lib/essays';
 </script>
 
 <svelte:head>
@@ -7,24 +6,7 @@
 </svelte:head>
 
 <div class="experience-container">
-  <section>
-    <h1>Experience</h1>
-    {#each essays as exp}
-      <div class="experience-card">
-        <div class="header">
-          <h2><strong>{exp.company}</strong> | <em>{exp.role}</em></h2>
-          <div class="subheader">
-            <span class="location">{exp.location}</span>
-            <span class="date">{exp.date}</span>
-          </div>
-        </div>
-        <ul>
-          {#each exp.points as point}
-            <li>{point}</li>
-          {/each}
-        </ul>
-      </div>
-    {/each}
+  <p>Coming Soon</p>
   </section>
 
 </div>
