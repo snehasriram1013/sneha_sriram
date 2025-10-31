@@ -11,7 +11,15 @@
 	<meta name="title" content="Sneha Sriram – Researcher & Technologist">
 	<meta name="description" content="Sneha Sriram is a researcher and technologist studying human-computer interaction, accessibility, and ethics in AI.">
 	<meta name="keywords" content="Sneha Sriram, Wellesley, HCI, accessibility, AI ethics, researcher">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-192X758R2M"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
+	gtag('config', 'G-192X758R2M');
+	</script>
 </svelte:head>
 <main>
 	<div class="container">
